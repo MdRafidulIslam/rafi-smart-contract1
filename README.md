@@ -1,4 +1,4 @@
-## Ali_Khatami_Solidity(Learning From video of Patrick Collins)
+## Rafidul_Smart_Contract
 ### Basic with data types
 "The Ethereum Virtual Machine, known as EVM, operates on the Ethereum blockchain and executes smart contracts written in Solidity. Its significance lies in providing a secure and trustworthy environment for decentralized applications (dapps) to run on the blockchain, making it an essential component of the Ethereum ecosystem.<br>"
 
@@ -74,6 +74,7 @@ contract rafiSimplestorage {
 
 ```
 After compiling when we will deploy our contract we will see the following informations about deployment shown in the picture below:<br> 
+![c1](https://user-images.githubusercontent.com/86659473/236888199-5313b207-890c-4089-b529-e86aee1ab4a5.JPG)
 
 Figure 1
 ![a2](https://user-images.githubusercontent.com/89090776/226108832-42467b80-5d92-428c-a466-79ab7ac5e52a.jpg)
