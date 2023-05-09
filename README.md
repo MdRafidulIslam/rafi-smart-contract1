@@ -32,7 +32,6 @@ contract rafiSimplestorage {
   uint256 goodNumberU=689;
   int256 goodNumberI=689;
   string goodNumberS="Six hundred eighty nine";
-  address rafiaddress= 0x3Fe3d73B20BAc5A43D8dACb674982011ec1Db200;
 }
 
 ```
@@ -70,7 +69,7 @@ contract rafiSimplestorage {
   
 }
 
-//0xd9145CCE52D386f254917e481eB44e9943F39138
+
 
 ```
 After compiling when we will deploy our contract we will see the following informations about deployment shown in the picture below:<br> 
@@ -94,3 +93,34 @@ When we run the above code we will see the following image at deploy and transac
 Here,<br>
 In the above image the orange color store button appers due to the store function and the blue color prefferednumber button appears because we have made the visibility of preferred number to public.
 When we typed a number ```765``` and hit the the store button we are actually making a transaction and then we hit the preferrednumber button we see that preferrednumber gets stored as ```770```<br>
+
+To understand more about functions we rewrite the code again:
+```
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract rafiSimplestorage {
+  // basic data types: boolean, uint,int,address,bytes
+  //uint(unsigned integer only positive),int both pos and neg
+  //address is the address of the account
+  //string are secretly byte objects only for text
+  //bytes32 is a bytes objects whre 32 represent how many bytes we want them to be,max size is 32
+  //byte objects look like 0xsdsysydggt
+  //unint256 here 256 is bit (8,16,32 upto 256 we can use)
+  uint256 public preferredNumber;//this gets initialized to zero
+
+//pasing parameter of type uint256 and made the function public
+  function store(uint256 _goodNumber) public{
+    goodNumber = _goodNumber;
+    goodNumber = _goodNumber +1;
+
+
+  }
+  function retrieve() public view returns(uint256){
+    return goodNumber;
+  }
+  
+}
+
+
+```
