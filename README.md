@@ -58,7 +58,7 @@ contract rafiSimplestorage {
   //byte objects look like 0xsdsysydggt
   //unint256 here 256 is bit (8,16,32 upto 256 we can use)
   uint256 public goodNumber;//this gets initialized to zero,
-  //this 'uint256 public preferredNumber' is a global scope means anything inside the curly brackets of contract akrkSimplestorage can access it.       
+  //this 'uint256 public goodNumber' is a global scope means anything inside the curly brackets of contract akrkSimplestorage can access it.       
 //pasing parameter of type uint256 and made the function public
 //anything created within this function below can't be access by other functions or anything inside the curly brackets of contract akrkSimplestorage  
   function store(uint256 goodNumber) public{
@@ -75,10 +75,10 @@ contract rafiSimplestorage {
 After compiling when we will deploy our contract we will see the following informations about deployment shown in the picture below:<br> 
 ![c1](https://user-images.githubusercontent.com/86659473/236888199-5313b207-890c-4089-b529-e86aee1ab4a5.JPG)
 
-Figure 1
+Figure 1 : Here orange color store button is created due to gas calling function store and blue color goodNumber button is created due to  uint256 public goodNumber; where we dont have to pay gas
 ![c2](https://user-images.githubusercontent.com/86659473/236889558-3def61b3-fa2d-40a6-a685-aecc247d38e6.JPG)
 
-Figure 2
+Figure 2 : here tranction details after clicking store button 
 
 <br>
 
